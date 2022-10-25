@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="89" id="cdD-9L-2cc" customClass="ClearAllTableViewCell" customModule="Children_Info" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cdD-9L-2cc" id="btC-Qh-RRP">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rk4-0F-14j">
+                        <rect key="frame" x="97.666666666666686" y="20.666666666666671" width="195" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="OU1-79-CxD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="tintColor" systemColor="systemRedColor"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Очистить"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Очистить">
+                            <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="clearAllTapped:" destination="cdD-9L-2cc" eventType="touchUpInside" id="8np-Ma-Tvj"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rk4-0F-14j" firstAttribute="centerY" secondItem="btC-Qh-RRP" secondAttribute="centerY" id="BeL-mD-dTe"/>
+                    <constraint firstItem="rk4-0F-14j" firstAttribute="centerY" secondItem="btC-Qh-RRP" secondAttribute="centerY" id="KNz-sD-FBk"/>
+                    <constraint firstItem="rk4-0F-14j" firstAttribute="centerX" secondItem="btC-Qh-RRP" secondAttribute="centerX" id="MUb-ts-iwa"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rk4-0F-14j" secondAttribute="bottom" constant="16" id="Pn6-bf-H8E"/>
+                    <constraint firstItem="rk4-0F-14j" firstAttribute="width" secondItem="btC-Qh-RRP" secondAttribute="width" multiplier="0.5" id="UGR-Sb-MWx"/>
+                    <constraint firstItem="rk4-0F-14j" firstAttribute="top" relation="greaterThanOrEqual" secondItem="btC-Qh-RRP" secondAttribute="top" constant="16" id="gwQ-gT-FDB"/>
+                    <constraint firstItem="rk4-0F-14j" firstAttribute="centerX" secondItem="btC-Qh-RRP" secondAttribute="centerX" id="puU-Fa-iz5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="clearButton" destination="rk4-0F-14j" id="7Hy-Dv-e5A"/>
+            </connections>
+            <point key="canvasLocation" x="24.615384615384613" y="89.928909952606631"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
